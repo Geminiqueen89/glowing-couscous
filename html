@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Knowledge is Power</title>
+  <style>
+    :root {
+      --primary: #1e3a8a;    /* deep blue */
+      --accent: #f59e0b;      /* gold/orange for energy */
+      --light: #f3f4f6;
+      --dark: #111827;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: linear-gradient(135deg, var(--light) 0%, #e5e7eb 100%);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 5rem 1rem 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: '"Scientia potentia est"';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-15deg);
+      font-size: 12rem;
+      opacity: 0.08;
+      font-style: italic;
+      white-space: nowrap;
+      pointer-events: none;
+    }
+    h1 {
+      font-size: 3.5rem;
+      margin: 0;
+      position: relative;
+      z-index: 1;
+    }
+    .subtitle {
+      font-size: 1.5rem;
+      opacity: 0.9;
+      margin-top: 0.5rem;
+    }
+    main {
+      max-width: 1100px;
+      margin: -3rem auto 4rem;
+      padding: 0 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+    }
+    .quote {
+      font-size: 1.8rem;
+      font-style: italic;
+      color: var(--primary);
+      text-align: center;
+      margin: 2rem 0;
+      padding: 1.5rem;
+      border-left: 6px solid var(--accent);
+      background: rgba(245, 158, 11, 0.05);
+    }
+    .sections {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+    .section-card {
+      background: white;
+      border-radius: 10px;
+      padding: 1.8rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+    }
+    .section-card:hover {
+      transform: translateY(-8px);
+    }
+    .icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+    footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: var(--primary);
+      color: white;
+    }
+    @media (max-width: 768px) {
+      h1 { font-size: 2.8rem; }
+      header { padding: 4rem 1rem 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Knowledge is Power</h1>
+    <p class="subtitle">— Francis Bacon, 1597</p>
+  </header>
+
+  <main>
+    <div class="quote">
+      “For knowledge itself is power.”
+    </div>
+
+    <div class="card">
+      <h2>What It Really Means Today</h2>
+      <p>In the information age, this phrase is more relevant than ever. Knowledge isn't just facts — it's the ability to:</p>
+      <ul>
+        <li>Make informed decisions</li>
+        <li>Solve complex problems</li>
+        <li>Innovate and create value</li>
+        <li>Protect yourself from manipulation</li>
+        <li>Empower others and build communities</li>
+      </ul>
+      <p>Those who control access to quality knowledge (or know how to find and use it) hold real influence.</p>
+    </div>
+
+    <div class="sections">
+      <div class="section-card">
+        <div class="icon">🧠</div>
+        <h3>Personal Empowerment</h3>
+        <p>Learning continuously gives you agency over your career, health, finances, and relationships. Ignorance is expensive — knowledge compounds like interest.</p>
+      </div>
+
+      <div class="section-card">
+        <div class="icon">🌍</div>
+        <h3>Societal Impact</h3>
+        <p>Access to education and information reduces inequality. Closed knowledge systems (gatekeeping) concentrate power; open ones democratize it.</p>
+      </div>
+
+      <div class="section-card">
+        <div class="icon">⚔️</div>
+        <h3>In the Age of AI</h3>
+        <p>AI changes the game: raw facts are cheap, but knowing <em>how to ask, verify, synthesize, and apply</em> knowledge is the new power skill. Prompting, critical thinking, and domain expertise win.</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 3rem;">
+      <h2>Take Action — Start Building Your Power</h2>
+      <p>Quick starting points:</p>
+      <ol>
+        <li>Read widely and diversely (books, papers, opposing views)</li>
+        <li>Practice deliberate learning (Feynman technique, teach others)</li>
+        <li>Build your personal knowledge system (notes, tools like Obsidian/Roam)</li>
+        <li>Question sources — verify before you trust</li>
+        <li>Share what you learn — teaching reinforces mastery</li>
+      </ol>
+      <p style="text-align:center; margin-top:2rem;">
+        <strong>Knowledge unused is potential wasted.<br>Go turn yours into power.</strong>
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Built as a replication of a Manus AI task • 2026 • Feel free to fork & improve</p>
+  </footer>
+
+</body>
+</html>
